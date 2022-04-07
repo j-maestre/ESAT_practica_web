@@ -1,19 +1,23 @@
 let menuEECont = 0;
-let totalEE = 0;
-console.log("OLEeee");
+let currentEE = 0;
+const totalEE = 2;
+
 
 let menu = document.getElementById("menuBars");
+let eye = document.getElementById("ee_eye");
 
+eye.onclick = () =>{
+    ShowModal();
+}
 menu.onclick = () =>{
-
     menuEECont++;
-    console.log("ole "+menuEECont);
-    // Toastify({
+    if(menuEECont==11){
+        ShowModal();
+    }
+}
 
-    //     text: "This is a toast",
-    //     duration: 3000
-        
-    // }).showToast();
+
+function ShowModal(text){
     toastr.options = {
         "closeButton": true,
         "debug": false,
@@ -32,15 +36,12 @@ menu.onclick = () =>{
         "hideMethod": "fadeOut"
       }
       toastr.success('Has encontrado un Easter Egg');
-
-    if(menuEECont==11){
-        totalEE++;
-        ShowTotalEE();
-    }
+      currentEE++;
+      ShowTotalEE();
 }
 
 
 
 function ShowTotalEE(){
-    alert("Total EE-> "+totalEE+"/"+1);
+    alert("Total EE-> "+currentEE+"/"+totalEE);
 }
