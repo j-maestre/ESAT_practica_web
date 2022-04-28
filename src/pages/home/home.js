@@ -2,6 +2,8 @@ let menuEECont = 0;
 let currentEE = 0;
 const totalEE = 2;
 
+
+
 // let menu = document.getElementById("menuBars");
 let eye = document.getElementById("ee_eye");
 
