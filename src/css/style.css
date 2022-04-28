@@ -1,5 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css?family=Varela+Round'); */
-
+:root {
+    --principal: rgb(247, 150, 70);
+    --secondary: rgb(0, 0, 0);
+    --terciary: rgb(228, 228, 228);
+}
 #currentPage{
     width: 100%;
     /* margin-top: 27%; */
