@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css?family=Varela+Round'); */
 :root {
-    --principal: rgb(247, 150, 70);
+    --principal: rgb(255, 61, 0);
     --secondary: rgb(0, 0, 0);
     --terciary: rgb(228, 228, 228);
 }
@@ -19,7 +19,7 @@
 ::-webkit-scrollbar-thumb   
 	{
    
-		background:  linear-gradient(black,lime);
+		background:  linear-gradient(black,var(--principal  ));
 		border-radius:6px;
 
 	}
@@ -87,7 +87,8 @@
     }
     
         .menu li:hover a {
-            color: #d94f5c;
+            /* color: #d94f5c; */
+            color: var(--principal);
         }
     
         .menu li:not(:last-child) {
