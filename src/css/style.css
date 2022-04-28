@@ -9,6 +9,25 @@
     /* margin-top: 27%; */
 }
 
+				
+::-webkit-scrollbar
+	{
+	
+		width: 12px;
+		background: transparent;
+	}
+::-webkit-scrollbar-thumb   
+	{
+   
+		background:  linear-gradient(black,lime);
+		border-radius:6px;
+
+	}
+				
+::-webkit-scrollbar-thumb:hover   
+	{
+                
+	}
 
 
 /* Style de mas de 900 */

@@ -17,6 +17,22 @@ p {
     text-align: center;
 }
 
+::-webkit-scrollbar
+	{
+		width: 12px;
+		background: rgb(0, 0, 0);
+	}
+::-webkit-scrollbar-thumb   
+	{
+        
+		background:  linear-gradient(black,var(--principal));
+		border-radius:6px; 
+	}
+				
+	::-webkit-scrollbar-thumb:hover   
+	{
+                
+	}
 
 #toast-container>.toast {
     width: 400px;
