@@ -14,5 +14,6 @@ atari.onclick = () =>{
 
 
 function Navigate(url){
+    console.log("Navegacion");
     document.getElementById("currentPage").src ="./pages/"+url+"/"+url+".html";
 }
