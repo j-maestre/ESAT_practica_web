@@ -3,22 +3,25 @@ let currentEE = 0;
 const totalEE = 2;
 
 
-
-// let menu = document.getElementById("menuBars");
+let menu = document.getElementById("menuBars");
 let eye = document.getElementById("ee_eye");
 
 eye.onclick = () => {
-    ShowModal("Has encontrado un Easter Egg");
+    ShowModal("Has encontrado un Easter Egg eye",0);
+    ShowTotalEE();
+
 }
-// menu.onclick = () => {
-//     menuEECont++;
-//     if (menuEECont == 11) {
-//         ShowModal();
-//     }
-// }
+menu.onclick = () => {
+    menuEECont++;
+    if (menuEECont == 2) {
+        ShowModal("Has encontrado un easter Egg! menu");
+        ShowTotalEE();
+
+    }
+}
 
 
-function ShowModal(text) {
+function ShowModal(text, type = 0) {
     toastr.options = {
         "closeButton": true,
         "debug": false,
@@ -36,17 +39,19 @@ function ShowModal(text) {
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
     }
-    console.log("show modal")
-    console.log(toastr);
-    toastr.success(text);
+
+    switch(type){
+        case 0: toastr.success(text);break;        
+        case 1: toastr.info(text);break;
+    
+    }
     currentEE++;
-    ShowTotalEE();
 }
 
 
 
 function ShowTotalEE() {
-    alert("Total EE-> " + currentEE + "/" + totalEE);
+    ShowModal("Total: " + currentEE + "/" + totalEE,1);
 }
 
 
