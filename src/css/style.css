@@ -4,9 +4,27 @@
     --secondary: rgb(0, 0, 0);
     --terciary: rgb(228, 228, 228);
 }
+hr{
+    border-top: 0px solid #8c8b8b;
+    border-radius: 25px;
+}
 #currentPage{
     width: 100%;
     /* margin-top: 27%; */
+}
+.bushnell{
+    max-width: 600px;
+}
+
+.porque_section__intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.robbinet{
+    max-width: 450px;
+    float: left;
 }
 
 				
@@ -35,6 +53,11 @@
     .menu_mobile{
         display: none;
     }
+    .home{
+        padding: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     .header {
         display: flex;
         flex-direction: row;
@@ -43,10 +66,14 @@
         justify-content: space-between; 
     }
     .origen_container{
-        padding: 20px;
+        margin-top: 100px;
+        /* padding: 20px;
         margin-left: 5%;
-        margin-right: 5%;
+        margin-right: 5%; */
         /* display: flex; */
+    }
+    .robbinet_section{
+        margin-top: 50px;
     }
     .atari_img{
         float: left;
