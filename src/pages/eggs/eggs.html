@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="../../css/style.css"> 
     <link rel="stylesheet" href="eggs.css">
     <link rel="stylesheet" href="carrousel.css">
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
     <!-- <link rel="stylesheet" href="./pages/home/home.css"> -->
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
 
 
 </head>
@@ -22,7 +27,8 @@
         <!-- Menu pc -->
         <section class="menu_pc">
             <div class="logo">
-                <img src="../../assets/logo.png" alt="logo" />
+                <a href="../../index.html"><img src="../../assets/logo.png" alt="logo" /></a>
+
             </div>
             <nav>
                 <ul class="menu">
@@ -68,22 +74,8 @@
         </div>
 
         <!-- Carrousel -->
-        <div class="">
-            <div id="css-script-menu">
-                <div class="css-script-center">
-                    <div class="css-script-clear"></div>
-                </div>
-            </div>
-            <div id="slider" class="slider">
-                <div class="wrapper">
-                    <div id="items" class="items">
-                        <span class="slide">Slide 1</span>
-                        <span class="slide">Slide 2</span>
-                    </div>
-                </div>
-                <a id="prev" class="control prev"></a>
-                <a id="next" class="control next"></a>
-            </div>
+        <div class="carrousel">
+            <img id="carrousel_img_principal" src="../../assets/mando_switch.jpg" />
         </div>
         
         <!-- END Carrousel -->
@@ -91,22 +83,9 @@
         
         
         
-        <script src="index.js"></script>
         
         
-        
-        <!-- <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-46156385-1', 'cssscript.com');
-            ga('send', 'pageview');
-
-        </script> -->
+  
     </section>
 
     <section class="footer">
@@ -130,13 +109,15 @@
     </section>
 
 
-
+    <!-- JavaScript -->
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> Carrousel -->
     <script src="https://kit.fontawesome.com/a1d3af8fdb.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="eggs.js"></script>
+    <script src="carrousel.js"></script>
     
 </body>
 
