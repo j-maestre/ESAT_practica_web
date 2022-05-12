@@ -1,5 +1,7 @@
 .eggs{
     margin-bottom: 220px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .eggs_title h2{
@@ -9,4 +11,21 @@
 
 #carrousel_img_principal:hover{
     cursor: alias;
+}
+
+.ee_article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+.ee_article img{
+    width: 400px;
+}
+
+.batlefield_traduccion{
+    color: var(--principal);
 }

@@ -19,5 +19,6 @@ document.getElementById("carrousel_img_principal").addEventListener("dragend", f
   // reset the transparency
   console.log("Draw End");
   event.target.style.opacity = "";
-  alert("Has encontrado un easter egg");
+  // alert("Has encontrado un easter egg");
+  ShowModal("Has encontrado un Easter Egg!");
 }, false);
