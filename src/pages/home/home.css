@@ -1,6 +1,9 @@
 .home *{
     color:white;
 }
+.home{
+    margin-bottom: 200px;
+}
 
 .home_secret {
     width: 100%;
