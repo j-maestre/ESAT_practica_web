@@ -1,5 +1,5 @@
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type=text],input[type=number],input[type=email], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid var(--principal); /* Gray border */
@@ -34,4 +34,8 @@ input[type=text], select, textarea {
     border-radius: 5px;
     background-color: transparent;
     padding: 20px;
+  }
+
+  .contact{
+    margin-bottom: 200px;
   }

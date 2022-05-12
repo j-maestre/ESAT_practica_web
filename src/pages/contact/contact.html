@@ -37,7 +37,7 @@
             <div class="logo">
                 <img src="assets/logo.png" alt="logo" />
             </div>
-            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu"/>
             <label for="openSidebarMenu" id="menuBars" class="sidebarIconToggle" onclick="">
                 <div class="spinner diagonal part-1"></div>
                 <div class="spinner horizontal"></div>
@@ -64,18 +64,21 @@
     
        <!-- AQUI VAN LAS MOVIDASSSSS -->
        <div class="container">
-        <form action="action_page.php">
+        <form action="mailto:garridora@esat-alumni.com" method="post" enctype="text/plain">
       
-          <label for="fname">Nombre</label>
-          <input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
+          <label for="Nombre" required>Nombre</label>
+          <input type="text" id="fname" name="Nombre" placeholder="Tu nombre..." />
+
+          <label for="email" required>Email</label>
+          <input type="email" id="Email" name="Email" placeholder="Email de contacto..." />
       
-          <label for="lname">Telefono</label>
-          <input type="text" id="lname" name="lastname" placeholder="Telefono de contacto...">
+          <label for="telefono">Telefono</label>
+          <input type="number" id="lname" name="telefono" placeholder="Opcional"/>
       
-          <label for="subject">Mensaje</label>
-          <textarea id="subject" name="subject" placeholder="Aquí va tu mensaje..." style="height:200px"></textarea>
+          <label for="mensaje" required>Mensaje</label>
+          <textarea id="Mensaje" name="Mensaje" placeholder="Aquí va tu mensaje..." style="height:200px"></textarea>
       
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Enviar"/>
       
         </form>
       </div>
