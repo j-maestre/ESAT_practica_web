@@ -26,16 +26,27 @@ input[type=text],input[type=number],input[type=email], select, textarea {
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: #c300ff;
+    background-color: var(--principal);
+    color: white;
   }
   
   /* Add a background color and some padding around the form */
-  .container {
+  .container{
     border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: transparent;
+    padding: 20px;
+  }
+  .pp{
+    color: rgb(194, 194, 194);
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: transparent;
     padding: 20px;
   }
 
   .contact{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
