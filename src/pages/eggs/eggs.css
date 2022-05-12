@@ -4,6 +4,11 @@
     margin-right: 5%;
 }
 
+.eggs p{
+    /* letter-spacing: 2px; */
+    line-height: 30px;
+}
+
 .eggs_title h2{
     text-align: center;
     font-size: 60px;
