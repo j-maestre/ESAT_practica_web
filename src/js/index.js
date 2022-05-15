@@ -1,13 +1,15 @@
 let menuEECont = 0;
 let currentEE = 0;
 
-let devEE = false;
-
 let ee_menu = false;
+let ee_secret = false;
 
 let ee_eye = false;
 if (localStorage.getItem("ee_eye")) {
     ee_eye = localStorage.getItem("ee_eye");
+}
+if (localStorage.getItem("ee_secret")) {
+    ee_secret = localStorage.getItem("ee_secret");
 }
 if (localStorage.getItem("ee_menu")) {
     ee_menu = localStorage.getItem("ee_menu");
@@ -28,7 +30,7 @@ eye.onclick = () => {
         localStorage.setItem("ee_eye",true);
         currentEE++;
         localStorage.setItem("currentEE",currentEE);
-        ShowTotalEE();
+        setTimeout(ShowTotalEE,2000);
     }
 
 }
@@ -40,48 +42,54 @@ menu.onclick = () => {
         localStorage.setItem("ee_menu",true);
         currentEE++;
         localStorage.setItem("currentEE",currentEE);
-        ShowTotalEE();
+        setTimeout(ShowTotalEE, 2000);
 
     }
 }
 
 
-function ShowModal(text, type = 0) {
-    toastr.options = {
-        "closeButton": true,
-        "debug": false,
-        "newestOnTop": false,
-        "progressBar": true,
-        "positionClass": "toast-top-right",
-        "preventDuplicates": false,
-        "onclick": null,
-        "showDuration": "300",
-        "hideDuration": "1000",
-        "timeOut": "5000",
-        "extendedTimeOut": "1000",
-        "showEasing": "swing",
-        "hideEasing": "linear",
-        "showMethod": "fadeIn",
-        "hideMethod": "fadeOut"
-    }
+// function ShowModal(text, type = 0) {
+//     toastr.options = {
+//         "closeButton": true,
+//         "debug": false,
+//         "newestOnTop": false,
+//         "progressBar": true,
+//         "positionClass": "toast-top-right",
+//         "preventDuplicates": false,
+//         "onclick": null,
+//         "showDuration": "300",
+//         "hideDuration": "1000",
+//         "timeOut": "5000",
+//         "extendedTimeOut": "1000",
+//         "showEasing": "swing",
+//         "hideEasing": "linear",
+//         "showMethod": "fadeIn",
+//         "hideMethod": "fadeOut"
+//     }
 
-    switch(type){
-        case 0: toastr.success(text);break;        
-        case 1: toastr.info(text);break;
+//     switch(type){
+//         case 0: toastr.success(text);break;        
+//         case 1: toastr.info(text);break;
     
-    }
-}
+//     }
+// }
 
 
 
-function ShowTotalEE() {
-    ShowModal("Total: " + currentEE + "/" + totalEE,1);
-}
+// function ShowTotalEE() {
+//     ShowModal("Total: " + currentEE + "/" + totalEE,1);
+// }
 
 console.log("Escribe-> Secret()");
 function Secret() {
-    if(!devEE)ShowModal("Has encontrado un Easter Egg!");
-    devEE = true;
+    if(!ee_secret){
+        ShowModal("Has encontrado un Easter Egg!");
+        ee_secret = true;
+        currentEE++;
+        localStorage.setItem("ee_secret",true);
+        localStorage.setItem("currentEE",currentEE);
+        setTimeout(ShowTotalEE, 2000);
+    }
 }
 
 

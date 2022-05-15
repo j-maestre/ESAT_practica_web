@@ -1,8 +1,8 @@
-const totalEE = 5;
+const totalEE = 6;
 
-function ShowTotalEE() {
-    ShowModal("Total: " + currentEE + "/" + totalEE, 1);
-}
+// function ShowTotalEE() {
+//     ShowModal("Total: " + currentEE + "/" + totalEE, 1);
+// }
 
 
 function ShowModal(text, type = 0) {
@@ -36,4 +36,7 @@ function ShowModal(text, type = 0) {
 
 function ShowTotalEE() {
     ShowModal("Total: " + currentEE + "/" + totalEE, 1);
+    if(currentEE == totalEE){
+        ShowModal("OLE LOS CARACOLES!",1);
+    }
 }

@@ -23,11 +23,13 @@ console.log(ee_footer_bool)
 
 
 ee_footer.onclick = () => {
-    if(!ee_footer_bool)ShowModal("Has encontrado un Easter Egg!");
-    ee_footer_bool = false;
-    ee_footer.style.display = "none";
-    currentEE++;
-    localStorage.setItem("ee_footer",true);
-    localStorage.setItem("currentEE",currentEE);
-    ShowTotalEE();
+    if(!ee_footer_bool){
+        ShowModal("Has encontrado un Easter Egg!");
+        ee_footer_bool = false;
+        ee_footer.style.display = "none";
+        currentEE++;
+        localStorage.setItem("ee_footer",true);
+        localStorage.setItem("currentEE",currentEE);
+        setTimeout(ShowTotalEE, 2000);
+    }
 }

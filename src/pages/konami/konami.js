@@ -17,6 +17,16 @@ let enter = false;
 
 let completed = false;
 
+let currentEE = 0;
+
+if(localStorage.getItem("completed")){
+    completed = localStorage.getItem("completed");
+}
+
+if(localStorage.getItem("currentEE")){
+    currentEE = localStorage.getItem("currentEE");
+}
+
 let fallo = () =>{
     up1 = false;
     up2 = false;
@@ -123,9 +133,15 @@ document.addEventListener('keydown', function (event) {
 
 
     if(enter){
-        if(!completed)ShowModal("Has encontrado el Easter Egg de Konami!");
+        if(!completed){
+            ShowModal("Has encontrado el Easter Egg de Konami!");
+            completed = true;
+            localStorage.setItem("completed",true);
+            currentEE++;
+            localStorage.setItem("currentEE",currentEE);
+            setTimeout(ShowTotalEE, 2000);
+        }
         fallo();
-        completed = true;
     }
 
     //First up
