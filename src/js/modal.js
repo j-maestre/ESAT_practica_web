@@ -1,3 +1,10 @@
+const totalEE = 5;
+
+function ShowTotalEE() {
+    ShowModal("Total: " + currentEE + "/" + totalEE, 1);
+}
+
+
 function ShowModal(text, type = 0) {
     toastr.options = {
         "closeButton": true,

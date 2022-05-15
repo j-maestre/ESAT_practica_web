@@ -1,22 +1,45 @@
 let menuEECont = 0;
 let currentEE = 0;
-const totalEE = 2;
 
 let devEE = false;
+
+let ee_menu = false;
+
+let ee_eye = false;
+if (localStorage.getItem("ee_eye")) {
+    ee_eye = localStorage.getItem("ee_eye");
+}
+if (localStorage.getItem("ee_menu")) {
+    ee_menu = localStorage.getItem("ee_menu");
+}
+
+if(localStorage.getItem("currentEE")){
+    currentEE = localStorage.getItem("currentEE");
+}
 
 
 let menu = document.getElementById("menuBars");
 let eye = document.getElementById("ee_eye");
 
 eye.onclick = () => {
-    ShowModal("Has encontrado un Easter Egg eye",0);
-    ShowTotalEE();
+    if(!ee_eye){
+        ShowModal("Has encontrado un Easter Egg eye",0);
+        ee_eye = true;
+        localStorage.setItem("ee_eye",true);
+        currentEE++;
+        localStorage.setItem("currentEE",currentEE);
+        ShowTotalEE();
+    }
 
 }
 menu.onclick = () => {
     menuEECont++;
-    if (menuEECont == 2) {
+    if (menuEECont == 2 && !ee_menu) {
         ShowModal("Has encontrado un easter Egg! menu");
+        ee_menu = true;
+        localStorage.setItem("ee_menu",true);
+        currentEE++;
+        localStorage.setItem("currentEE",currentEE);
         ShowTotalEE();
 
     }
@@ -47,7 +70,6 @@ function ShowModal(text, type = 0) {
         case 1: toastr.info(text);break;
     
     }
-    currentEE++;
 }
 
 
