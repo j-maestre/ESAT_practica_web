@@ -2,6 +2,8 @@ let menuEECont = 0;
 let currentEE = 0;
 const totalEE = 2;
 
+let devEE = false;
+
 
 let menu = document.getElementById("menuBars");
 let eye = document.getElementById("ee_eye");
@@ -52,6 +54,12 @@ function ShowModal(text, type = 0) {
 
 function ShowTotalEE() {
     ShowModal("Total: " + currentEE + "/" + totalEE,1);
+}
+
+console.log("Escribe-> Secret()");
+function Secret() {
+    if(!devEE)ShowModal("Has encontrado un Easter Egg!");
+    devEE = true;
 }
 
 
