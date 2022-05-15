@@ -80,7 +80,7 @@ menu.onclick = () => {
 //     ShowModal("Total: " + currentEE + "/" + totalEE,1);
 // }
 
-console.log("Escribe-> Secret()");
+console.log("Quizás aquí haya un Secret() escondido...");
 function Secret() {
     if(!ee_secret){
         ShowModal("Has encontrado un Easter Egg!");
