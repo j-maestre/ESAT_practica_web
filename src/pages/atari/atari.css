@@ -1,6 +1,9 @@
 .atari{
     color: white;
 }
+h1 {
+    text-align: center;
+}
 h2 {
     font-size: 80px;
     text-align: center;
@@ -17,4 +20,19 @@ p {
 
 #ee_footer:hover{
     cursor: help;
+}
+
+
+iframe{
+    display: none;
+}
+
+@media only screen and (max-device-width: 900px) { /* movil */
+    #adventure_movil{ 
+        display: inline; 
+    }
+}
+
+@media (min-device-width: 900px){
+    #adventure_pc{ display: inline; }
 }

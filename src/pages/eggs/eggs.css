@@ -61,4 +61,29 @@
     height: auto;
 }
 
+@media only screen and (max-device-width: 900px) { /* movil */
+    
+    .menu_pc {
+        display: none;
+    }
+    
+    .origen_container {
+        padding: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        /* display: flex; */
+    }
 
+}
+
+@media (min-device-width: 900px){
+    .menu_pc{
+        display: block;
+        color:rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

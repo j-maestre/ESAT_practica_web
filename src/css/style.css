@@ -137,18 +137,19 @@ hr{
         }
 }
 
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-device-width: 900px) { /* movil */
     
     .menu_pc {
         display: none;
     }
-
+    
     .origen_container {
         padding: 20px;
         margin-left: 5%;
         margin-right: 5%;
         /* display: flex; */
     }
+
 }
 
 @media (min-device-width: 900px){
