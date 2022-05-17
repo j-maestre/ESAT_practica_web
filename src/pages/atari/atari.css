@@ -31,8 +31,24 @@ iframe{
     #adventure_movil{ 
         display: inline; 
     }
+    .footer{
+        position: absolute;
+    }
+}
+
+.video_container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iframe_video{
+    height: 100%;
 }
 
 @media (min-device-width: 900px){
     #adventure_pc{ display: inline; }
+    
 }
