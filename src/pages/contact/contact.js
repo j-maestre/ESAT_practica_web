@@ -18,5 +18,5 @@ function Codigo(code = ""){
     }
 }
 
-let oldConsoleLog = window['console']['log'];
+const oldConsoleLog = window['console']['log'];
 window['console']['log'] = null;
