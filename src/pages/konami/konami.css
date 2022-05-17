@@ -23,12 +23,13 @@ p{
     max-width: 250px;
     min-width: 150px;
     margin-left: 13%;
+    margin-right: 25px;
     float:left;
 }
 
 .MGS2text{
     min-width: 300px;
-    margin-left: 33%;
+    /* margin-left: 33%; */
     margin-top: 50px;
 
 }
