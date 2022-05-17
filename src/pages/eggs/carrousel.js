@@ -30,7 +30,7 @@ document.getElementById("carrousel_img_principal").addEventListener("dragstart",
 
 document.getElementById("carrousel_img_principal").addEventListener("dragend", function (event) {
   // reset the transparency
-  // console.log("Draw End");
+  console.log("Draw End");
   event.target.style.opacity = "";
   if(!ee_drag){
     ShowModal("Has encontrado un Easter Egg!");
