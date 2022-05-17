@@ -34,3 +34,25 @@
 .batlefield_traduccion{
     color: var(--principal);
 }
+
+.fourth_wall{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.metal_gear_portada{
+    max-width: 300px;
+    height: auto;
+}
+
+.metal_gear_code{
+    max-width: 616px;
+    height: auto;
+}
+
+.origami{
+    max-width: 615px;
+    height: auto;
+}
