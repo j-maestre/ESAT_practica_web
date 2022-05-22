@@ -1,4 +1,4 @@
-const totalEE = 6;
+const totalEE = 7;
 
 // function ShowTotalEE() {
 //     ShowModal("Total: " + currentEE + "/" + totalEE, 1);

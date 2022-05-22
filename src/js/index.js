@@ -3,6 +3,7 @@ let currentEE = 0;
 
 let ee_menu = false;
 let ee_secret = false;
+let ee_bushnell = false;
 
 let ee_eye = false;
 if (localStorage.getItem("ee_eye")) {
@@ -13,6 +14,9 @@ if (localStorage.getItem("ee_secret")) {
 }
 if (localStorage.getItem("ee_menu")) {
     ee_menu = localStorage.getItem("ee_menu");
+}
+if (localStorage.getItem("ee_bushnell")) {
+    ee_bushnell = localStorage.getItem("ee_bushnell");
 }
 
 if(localStorage.getItem("currentEE")){
@@ -59,6 +63,40 @@ function Secret() {
         setTimeout(ShowTotalEE, 2000);
     }
 }
+
+let bushnell = document.getElementById("bushnell");
+let bushnell_input = document.getElementById("bushnell_input");
+
+bushnell.onclick = () => {
+    bushnell_input.style.display = "block";
+}
+
+bushnell_input.addEventListener("change", (event) =>{
+
+    if(!ee_bushnell){
+        if(event.target.value == "$"){
+            bushnell_input.style.color = "#ff9600";
+            ShowModal("Muy poquito...");
+        }else if(event.target.value == "$$"){
+            bushnell_input.style.color = "#ffcc00";
+            ShowModal("Al igual un poco más...");
+        }else if(event.target.value == "$$$"){
+            bushnell_input.style.color = "green";
+            ShowModal("Ahora si nos entendemos");
+            setTimeout(function(){
+                ShowModal("Has encontrado un Easter Egg!");
+                ee_bushnell = true;
+                currentEE++;
+                localStorage.setItem("ee_bushnell",true);
+                localStorage.setItem("currentEE",currentEE);
+                setTimeout(ShowTotalEE, 2000);
+            },2000);
+
+        }else{
+            bushnell_input.style.color = "red";
+        }
+    }
+});
 
 
 // let home = document.getElementById("home");

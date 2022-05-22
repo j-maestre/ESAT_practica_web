@@ -4,6 +4,6 @@ if(localStorage.getItem("currentEE")){
     total = localStorage.getItem("currentEE")
 }
 
-if (total != 6){
+if (total != 7){
     document.getElementById("fourth_wall").style.display = "none";
 }

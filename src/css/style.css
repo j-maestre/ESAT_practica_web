@@ -230,3 +230,8 @@ hr{
     font-size:16px;
 }
 
+input.bushnell_input{
+    color: black;
+    display:none;
+}
+
